@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --mainBg-Color: rgb(30, 29, 29);
+  --textTheme-Color: rgb(230, 234, 0);
+}
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  backdrop-filter: blur(3px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(3, 17, 41, 0.75);
+  height: 110vh;
+  margin-top: 7px;
+  background-image: url(/images/pexels-catiamatos-1072179.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.centered-content {
+  border: rgb(0, 0, 0);
+  border-top-style: solid;
+  border-bottom-style: solid;
+  color: var(--textTheme-Color);
+  padding: 5px;
+  display: grid;
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  place-content: center;
+}
+.centered-content > h1 {
+  text-transform: capitalize;
+  line-height: 10vh;
+}
+.centered-content > h2 {
+  margin-bottom: 10px;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+}
+p {
+  line-height: 5vh;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(89, 243, 0);
+}
