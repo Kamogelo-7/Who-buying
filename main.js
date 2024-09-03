@@ -1,15 +1,15 @@
 function lunchBuyerGame() {
   alert("Who is buying Food today?");
-  let lunchPayer = ["Manqoba", "kamogelo", "sanele"];
-  let hotDogPerPs = 3;
-  let drinksPerPs = 3;
-  let drinkCostPrice = 10;
-  let hotDogCostPrice = 13;
+  const lunchPayer = ["Manqoba", "kamogelo", "sanele"];
+  const hotDogPerPs = 3;
+  const drinksPerPs = 3;
+  const drinkCostPrice = 10;
+  const hotDogCostPrice = 13;
 
   //* Calculate total hotdog and drink costs
 
-  let totalHotDogs = hotDogPerPs * hotDogCostPrice;
-  let totalDrinks = drinksPerPs * drinkCostPrice;
+  const totalHotDogs = hotDogPerPs * hotDogCostPrice;
+  const totalDrinks = drinksPerPs * drinkCostPrice;
   const addedFoodCost = totalHotDogs + totalDrinks;
 
   let lunchPayerName = prompt("Enter the amount you have");
@@ -17,7 +17,7 @@ function lunchBuyerGame() {
 
   //* Calculate the remaining money after the purchase
 
-  let remainingMoney = lunchPayerName - addedFoodCost;
+  const remainingMoney = lunchPayerName - addedFoodCost;
 
   let pickedPerson = lunchPayer[randomPerson];
   document.querySelector("h2").innerHTML =
